@@ -26,7 +26,7 @@
 body{
   background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.8;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
-  padding-block:0;margin:0;
+  padding-block:0;margin:0;word-break:keep-all;overflow-wrap:break-word;
 }
 .wrap{max-width:440px;margin:0 auto;display:flex;flex-direction:column;gap:56px;padding-block:32px 48px}
 h1,h2,h3,p{margin:0}
@@ -78,8 +78,8 @@ h2{font-family:var(--display);font-weight:700;font-size:1.5rem;text-wrap:balance
 .cal .dow.sat,.cal .d.sat{color:#7f95a8}
 .cal .d{aspect-ratio:1;display:grid;place-items:center;font-size:.95rem;border-radius:50%;line-height:1}
 .cal .d.hit{background:var(--rose);color:#fff;font-weight:700;box-shadow:0 0 0 4px rgba(217,138,134,.28)}
-.cal-note{text-align:center;font-size:.95rem;color:var(--ink-soft)}
-.cal-note b{color:var(--ink);font-weight:400;border-bottom:2px solid var(--butter)}
+.cal-note{text-align:center;font-size:.95rem;color:var(--ink-soft);line-height:1.9;text-wrap:balance}
+.cal-note b{display:inline-block;white-space:nowrap;color:var(--ink);font-weight:400;border-bottom:2px solid var(--butter);line-height:1.5;margin-bottom:6px}
 
 /* place */
 .place{display:flex;flex-direction:column;gap:18px}
@@ -193,7 +193,7 @@ h2{font-family:var(--display);font-weight:700;font-size:1.5rem;text-wrap:balance
     <div class="cal-card">
       <div class="cal-title">2026년 10월</div>
       <div class="cal" id="cal" role="grid" aria-label="2026년 10월 달력"></div>
-      <p class="cal-note"><b>10월 24일 토요일 오후 7시</b><br>하린이의 생일은 10월 29일이라 일정을 앞당겨 모십니다.</p>
+      <p class="cal-note"><b>10월 24일 토요일 오후 7시</b><br>하린이의 생일은 10월 29일이라<br>일정을 앞당겨 모십니다.</p>
     </div>
   </section>
 
