@@ -86,7 +86,8 @@ h2{font-family:var(--display);font-weight:700;font-size:1.5rem;text-wrap:balance
 .map{background:var(--card);border-radius:20px;padding:10px;box-shadow:0 10px 24px -16px rgba(74,58,46,.4)}
 .map svg{display:block;width:100%;height:auto;border-radius:12px}
 .map svg text{font-family:var(--body)}
-.map-note{font-size:.82rem;color:var(--ink-soft);text-align:center;padding:8px 8px 2px;line-height:1.5}
+.map-note{font-size:.78rem;color:var(--ink-soft);text-align:center;padding:8px 8px 2px;line-height:1.6;display:flex;flex-direction:column;gap:4px}
+.map-note span{display:block;text-wrap:balance}
 .addr{display:flex;flex-direction:column;gap:6px;text-align:center;align-items:center}
 .addr .name{font-family:var(--display);font-weight:700;font-size:1.25rem}
 .addr .room{font-family:var(--hand);font-size:1.2rem;color:var(--rose)}
@@ -248,7 +249,7 @@ h2{font-family:var(--display);font-weight:700;font-size:1.5rem;text-wrap:balance
         <!-- 방위 -->
         <g transform="translate(330 26)"><circle r="14" fill="#fffaf2"/><path d="M0 -9 L5 5 L0 2 L-5 5Z" fill="#4a3a2e"/><text y="-17" font-size="9" fill="#8a7461" text-anchor="middle">N</text></g>
       </svg>
-      <p class="map-note">약도는 위치를 쉽게 알아보시도록 그린 그림입니다. 정확한 길은 아래 지도 앱으로 확인해 주세요.</p>
+      <p class="map-note"><span>약도는 위치 안내용 그림입니다.</span><span>정확한 길은 아래 지도 앱으로 확인해 주세요.</span></p>
     </div>
 
     <div class="addr">
